@@ -1,6 +1,6 @@
 PACKAGES := $(wildcard packages/*)
 FEATURES := $(wildcard packages/features/*)
-BUILD-RUNNER := packages/open_meteo_api packages/weather_repository
+BUILD-RUNNER := packages/open_meteo_api packages/weather_repository package/weather
 
 print:
 	for feature in $(FEATURES); do \
