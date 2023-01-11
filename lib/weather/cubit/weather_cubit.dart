@@ -42,6 +42,7 @@ class WeatherCubit extends HydratedCubit<WeatherState> {
   Future<void> refreshWeather() async {
     if (!state.status.isSuccess) return;
     if (state.weather == Weather.empty) return;
+
     try {
       final weather = Weather.fromRepository(
         await _weatherRepository.getWeather(state.weather.location),
