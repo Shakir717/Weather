@@ -1,6 +1,6 @@
 # weather
 
-Weather app using bloc in flutter.
+Weather app intergrated Rest Api with  bloc.
 
 ## Getting Started
 
